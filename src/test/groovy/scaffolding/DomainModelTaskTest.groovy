@@ -29,11 +29,11 @@ class DomainModelTaskTest extends ScaffoldingPluginBaseTest {
 
     @Test
     void 'generates core domain files for model'() {
-        writeBuildFile(rootPackage: 'ch.sosman', applicationName: 'myapp', subdomain: 'famz')
+        writeBuildFile(rootPackage: 'ch.sosman', applicationName: 'myapp', subdomain: 'backorders')
 
         run('scaffoldDomainModel', '-PdomainModelName=Order')
 
-        def base = 'src/main/java/ch/sosman/myapp/domain/famz/order'
+        def base = 'src/main/java/ch/sosman/myapp/domain/backorders/order'
         assertFileExists("${base}/core/model/attribute/OrderId.java")
         assertFileExists("${base}/core/model/Order.java")
         assertFileExists("${base}/core/ports/incoming/OrderFacade.java")
@@ -87,11 +87,11 @@ class DomainModelTaskTest extends ScaffoldingPluginBaseTest {
 
     @Test
     void 'model is placed under subdomain when subdomain is set'() {
-        writeBuildFile(rootPackage: 'ch.sosman', applicationName: 'myapp', subdomain: 'famz')
+        writeBuildFile(rootPackage: 'ch.sosman', applicationName: 'myapp', subdomain: 'backorders')
 
         run('scaffoldDomainModel', '-PdomainModelName=Order')
 
-        assertFileExists('src/main/java/ch/sosman/myapp/domain/famz/order/core/model/Order.java')
+        assertFileExists('src/main/java/ch/sosman/myapp/domain/backorders/order/core/model/Order.java')
     }
 
     private void assertFileExists(String relativePath) {

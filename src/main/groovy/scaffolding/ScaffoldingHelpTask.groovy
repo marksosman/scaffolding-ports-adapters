@@ -28,10 +28,10 @@ plugins {
 }
 
 scaffolding {
-    rootPackage     = 'ch.sosman.bz'        // required
+    rootPackage     = 'ch.sosman.domainname'        // required
     applicationName = 'myapp'            // optional – appended to rootPackage
     domain          = 'orders'           // optional – sub-package under applicationName
-    subdomain       = 'returns'          // optional – sub-package under domain
+    subdomain       = 'backorders'          // optional – sub-package under domain
     dryRun          = false              // preview without writing any files
 }
 

@@ -14,7 +14,7 @@ A Gradle plugin that scaffolds a **Ports and Adapters** (Hexagonal Architecture)
 
 ```groovy
 plugins {
-    id 'io.github.marksosman.scaffolding' version '1.0.0'
+    id 'io.github.marksosman.scaffolding' version '1.0.1'
 }
 ```
 
@@ -25,7 +25,7 @@ scaffolding {
     rootPackage     = 'ch.sosman'     // required — base Java package
     applicationName = 'myapp'      // optional — appended to rootPackage
     domain          = 'orders'     // optional — appended to applicationName
-    subdomain       = 'famz'       // optional — sub-package under domain/
+    subdomain       = 'backorders'       // optional — sub-package under domain/
 
     // scaffoldDomainModel feature flags (defaults shown)
     withCoreDomain     = true
@@ -75,7 +75,7 @@ src/main/java/ch/sosman/myapp/orders/
 ├── application/
 ├── crosscutting/
 ├── domain/
-│   └── famz/          ← created when subdomain is set
+│   └── backorders/          ← created when subdomain is set
 └── infrastructure/
 ```
 
@@ -102,10 +102,10 @@ All flags can also be passed as project properties to override the extension val
 
 #### Output
 
-Given `rootPackage=ch.sosman`, `applicationName=myapp`, `subdomain=famz`, `domainModelName=Order`:
+Given `rootPackage=ch.sosman`, `applicationName=myapp`, `subdomain=backorders`, `domainModelName=Order`:
 
 ```text
-src/main/java/ch/sosman/myapp/domain/famz/order/
+src/main/java/ch/sosman/myapp/domain/backorders/order/
 ├── core/
 │   ├── model/
 │   │   ├── Order.java                   ← aggregate root
@@ -160,7 +160,7 @@ With `withEventListener=true`:
 
 ```bash
 # 1. Configure once in build.gradle
-#    scaffolding { rootPackage = 'ch.sosman'; applicationName = 'myapp'; subdomain = 'famz' }
+#    scaffolding { rootPackage = 'ch.sosman'; applicationName = 'myapp'; subdomain = 'backorders' }
 
 # 2. Bootstrap the application structure
 ./gradlew scaffolding
