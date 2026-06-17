@@ -1,7 +1,7 @@
 [versions]
 junit = "5.11.4"
 junit-platform = "1.11.4"
-pluginVersion = "0.0.1"
+pluginVersion = "1.0.0"
 
 [libraries]
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
