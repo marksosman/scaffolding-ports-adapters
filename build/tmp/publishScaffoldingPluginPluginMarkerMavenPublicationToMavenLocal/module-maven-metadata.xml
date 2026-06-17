@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>ch.sosman.scaffolding</groupId>
+  <artifactId>ch.sosman.scaffolding.gradle.plugin</artifactId>
+  <versioning>
+    <latest>0.0.15707</latest>
+    <release>0.0.15707</release>
+    <versions>
+      <version>0.0.1</version>
+      <version>0.0.15707</version>
+    </versions>
+    <lastUpdated>20260617111037</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,60 @@
+plugins {
+    id 'groovy'
+    id 'java-gradle-plugin'
+    id 'maven-publish'
+}
+
+group = 'ch.sosman'
+version = libs.versions.pluginVersion.get()
+
+description = 'Scaffolding Gradle Plugin for Ports & Adapters architecture'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+
+    testImplementation gradleTestKit()
+    testImplementation libs.junit.jupiter
+    testRuntimeOnly libs.junit.launcher
+    testImplementation libs.junit.suite
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events 'passed', 'skipped', 'failed'
+    }
+}
+
+gradlePlugin {
+    plugins {
+        scaffoldingPlugin {
+            id = 'ch.sosman.scaffolding'
+            implementationClass = 'scaffolding.ScaffoldingPlugin'
+            displayName = 'DDD Scaffolding Plugin'
+            description = 'Generates Ports & Adapters scaffolding'
+        }
+    }
+}
+
+publishing {
+    repositories {
+        maven {
+            url = uri('https://central.sonatype.com/api/v1/publisher/upload')
+            credentials {
+                username = System.getenv("ARTIFACTORY_USER")
+                password = System.getenv("ARTIFACTORY_PASSWORD")
+            }
+        }
+    }
+}
