@@ -1,9 +1,9 @@
 {
   "formatVersion": "1.1",
   "component": {
-    "group": "ch.sosman",
+    "group": "io.github.marksosman",
     "module": "scaffolding-plugin",
-    "version": "0.0.15707",
+    "version": "0.0.1",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -25,13 +25,13 @@
       },
       "files": [
         {
-          "name": "scaffolding-plugin-0.0.15707.jar",
-          "url": "scaffolding-plugin-0.0.15707.jar",
-          "size": 87846,
-          "sha512": "e3200478a40fbb016ba6d90cc25b5cb99975f9abbcf3b90777ed2f8bfb56a238c0a9741fedf6633d524c6b356b77182eed95faea5912cea2ea4023ec8c79c692",
-          "sha256": "c7d8e9f1c53642b396e660b9c668a05dbe4879ac8597eeed70466e0a0f1ff1a2",
-          "sha1": "7465bcfd5687a7069e1ec0b79cb0c58a5b8d28bb",
-          "md5": "18c49dfc88e628a0b938a74e17932140"
+          "name": "scaffolding-plugin-0.0.1.jar",
+          "url": "scaffolding-plugin-0.0.1.jar",
+          "size": 87888,
+          "sha512": "0f78e87186c5ee9c69222e4c50b391224f1629c3d3aa474805a195ae8e5ab6d6ba1ceeb5d87ce261b04706f79298fb3f27af1c935000e842b88a4fd8be123b79",
+          "sha256": "a57f709eb40ed0bd002a35f31ce611ec9df2cf78828af76c741f419103ab8145",
+          "sha1": "6a0d756b96c330890e7607955baa1f3b3d199081",
+          "md5": "c6eba6daaaf8a5ef078a23a6b45ee84b"
         }
       ]
     },
@@ -46,13 +46,33 @@
       },
       "files": [
         {
-          "name": "scaffolding-plugin-0.0.15707.jar",
-          "url": "scaffolding-plugin-0.0.15707.jar",
-          "size": 87846,
-          "sha512": "e3200478a40fbb016ba6d90cc25b5cb99975f9abbcf3b90777ed2f8bfb56a238c0a9741fedf6633d524c6b356b77182eed95faea5912cea2ea4023ec8c79c692",
-          "sha256": "c7d8e9f1c53642b396e660b9c668a05dbe4879ac8597eeed70466e0a0f1ff1a2",
-          "sha1": "7465bcfd5687a7069e1ec0b79cb0c58a5b8d28bb",
-          "md5": "18c49dfc88e628a0b938a74e17932140"
+          "name": "scaffolding-plugin-0.0.1.jar",
+          "url": "scaffolding-plugin-0.0.1.jar",
+          "size": 87888,
+          "sha512": "0f78e87186c5ee9c69222e4c50b391224f1629c3d3aa474805a195ae8e5ab6d6ba1ceeb5d87ce261b04706f79298fb3f27af1c935000e842b88a4fd8be123b79",
+          "sha256": "a57f709eb40ed0bd002a35f31ce611ec9df2cf78828af76c741f419103ab8145",
+          "sha1": "6a0d756b96c330890e7607955baa1f3b3d199081",
+          "md5": "c6eba6daaaf8a5ef078a23a6b45ee84b"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "scaffolding-plugin-0.0.1-sources.jar",
+          "url": "scaffolding-plugin-0.0.1-sources.jar",
+          "size": 19928,
+          "sha512": "dcab709593c3212e32128f00609a76c2665a30a357b7b539b1e29d79cb06334bd746bd8580c70eee99661614d59546b7882757ba666c0158a2945d39c26aae52",
+          "sha256": "6d8f718e263820529bda864248a3b7319a2bcdb4621de225d2127b7af9ffa99c",
+          "sha1": "ca7603af6a74b89ee28eadc5620653036a9ac378",
+          "md5": "c0b786b9b44bea8be88bd0f04c23660e"
         }
       ]
     }

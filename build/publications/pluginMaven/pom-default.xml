@@ -7,7 +7,26 @@
   <!-- that they should prefer consuming it instead. -->
   <!-- do_not_remove: published-with-gradle-metadata -->
   <modelVersion>4.0.0</modelVersion>
-  <groupId>ch.sosman</groupId>
+  <groupId>io.github.marksosman</groupId>
   <artifactId>scaffolding-plugin</artifactId>
-  <version>0.0.15707</version>
+  <version>0.0.1</version>
+  <name>Scaffolding Ports and Adapters Plugin</name>
+  <description>Scaffolding Gradle Plugin for Ports &amp; Adapters architecture</description>
+  <url>https://github.com/marksosman/scaffolding-ports-adapters</url>
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>marksosman</id>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/marksosman/scaffolding-ports-adapters.git</connection>
+    <developerConnection>scm:git:ssh://github.com/marksosman/scaffolding-ports-adapters.git</developerConnection>
+    <url>https://github.com/marksosman/scaffolding-ports-adapters</url>
+  </scm>
 </project>

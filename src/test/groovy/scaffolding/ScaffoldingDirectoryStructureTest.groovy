@@ -9,7 +9,7 @@ class ScaffoldingDirectoryStructureTest extends ScaffoldingPluginBaseTest {
     void 'uses default root package when not configured'() {
         new File(projectDir, 'build.gradle').text = """
             plugins {
-                id 'ch.sosman.scaffolding'
+                id 'io.github.marksosman.scaffolding'
             }
         """
 

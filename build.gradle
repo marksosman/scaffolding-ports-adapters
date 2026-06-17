@@ -1,10 +1,10 @@
 plugins {
     id 'groovy'
     id 'java-gradle-plugin'
-    id 'maven-publish'
+    id 'com.vanniktech.maven.publish' version '0.30.0'
 }
 
-group = 'ch.sosman'
+group = 'io.github.marksosman'
 version = libs.versions.pluginVersion.get()
 
 description = 'Scaffolding Gradle Plugin for Ports & Adapters architecture'
@@ -39,7 +39,7 @@ test {
 gradlePlugin {
     plugins {
         scaffoldingPlugin {
-            id = 'ch.sosman.scaffolding'
+            id = 'io.github.marksosman.scaffolding'
             implementationClass = 'scaffolding.ScaffoldingPlugin'
             displayName = 'DDD Scaffolding Plugin'
             description = 'Generates Ports & Adapters scaffolding'
@@ -47,14 +47,34 @@ gradlePlugin {
     }
 }
 
-publishing {
-    repositories {
-        maven {
-            url = uri('https://central.sonatype.com/api/v1/publisher/upload')
-            credentials {
-                username = System.getenv("ARTIFACTORY_USER")
-                password = System.getenv("ARTIFACTORY_PASSWORD")
+mavenPublishing {
+    publishToMavenCentral(com.vanniktech.maven.publish.SonatypeHost.CENTRAL_PORTAL)
+    signAllPublications()
+
+    pom {
+        name = 'Scaffolding Ports and Adapters Plugin'
+        description = 'Scaffolding Gradle Plugin for Ports & Adapters architecture'
+        url = 'https://github.com/marksosman/scaffolding-ports-adapters'
+        licenses {
+            license {
+                name = 'The Apache License, Version 2.0'
+                url = 'https://www.apache.org/licenses/LICENSE-2.0.txt'
+            }
+        }
+        scm {
+            url = 'https://github.com/marksosman/scaffolding-ports-adapters'
+            connection = 'scm:git:git://github.com/marksosman/scaffolding-ports-adapters.git'
+            developerConnection = 'scm:git:ssh://github.com/marksosman/scaffolding-ports-adapters.git'
+        }
+        developers {
+            developer {
+                id = 'marksosman'
             }
         }
     }
+}
+
+signing {
+    useGpgCmd()
+    sign publishing.publications
 }

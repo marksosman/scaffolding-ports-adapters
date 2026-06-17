@@ -1,17 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>ch.sosman.scaffolding</groupId>
-  <artifactId>ch.sosman.scaffolding.gradle.plugin</artifactId>
-  <version>0.0.15707</version>
+  <groupId>io.github.marksosman.scaffolding</groupId>
+  <artifactId>io.github.marksosman.scaffolding.gradle.plugin</artifactId>
+  <version>0.0.1</version>
   <packaging>pom</packaging>
-  <name>DDD Scaffolding Plugin</name>
-  <description>Generates Ports &amp; Adapters scaffolding</description>
+  <name>Scaffolding Ports and Adapters Plugin</name>
+  <description>Scaffolding Gradle Plugin for Ports &amp; Adapters architecture</description>
+  <url>https://github.com/marksosman/scaffolding-ports-adapters</url>
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>marksosman</id>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/marksosman/scaffolding-ports-adapters.git</connection>
+    <developerConnection>scm:git:ssh://github.com/marksosman/scaffolding-ports-adapters.git</developerConnection>
+    <url>https://github.com/marksosman/scaffolding-ports-adapters</url>
+  </scm>
   <dependencies>
     <dependency>
-      <groupId>ch.sosman</groupId>
+      <groupId>io.github.marksosman</groupId>
       <artifactId>scaffolding-plugin</artifactId>
-      <version>0.0.15707</version>
+      <version>0.0.1</version>
     </dependency>
   </dependencies>
 </project>

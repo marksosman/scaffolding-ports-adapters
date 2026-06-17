@@ -25,7 +25,7 @@ abstract class ScaffoldingPluginBaseTest {
         }.join('\n')
         new File(projectDir, 'build.gradle').text = """
             plugins {
-                id 'ch.sosman.scaffolding'
+                id 'io.github.marksosman.scaffolding'
             }
             scaffolding {
 ${lines}

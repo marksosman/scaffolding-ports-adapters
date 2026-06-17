@@ -11,7 +11,7 @@ class ScaffoldingHelpTask extends DefaultTask {
     void printHelp() {
         logger.lifecycle("""
 ╔════════════════════════════════════════════════════════════════════════════
-║  Sosman Scaffolding Plugin — Usage Reference
+║  Scaffolding Ports & Adapters Plugin — Usage Reference
 ╠════════════════════════════════════════════════════════════════════════════
 ║
 ║  TASKS
@@ -24,7 +24,7 @@ class ScaffoldingHelpTask extends DefaultTask {
 ╠════════════════════════════════════════════════════════════════════════════
 
 plugins {
-    id 'ch.sosman.scaffolding' version '0.0.1'
+    id 'io.github.marksosman.scaffolding' version '0.0.1'
 }
 
 scaffolding {
