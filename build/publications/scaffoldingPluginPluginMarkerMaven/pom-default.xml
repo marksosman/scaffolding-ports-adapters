@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.marksosman.scaffolding</groupId>
   <artifactId>io.github.marksosman.scaffolding.gradle.plugin</artifactId>
-  <version>0.0.1</version>
+  <version>1.0.0</version>
   <packaging>pom</packaging>
   <name>Scaffolding Ports and Adapters Plugin</name>
   <description>Scaffolding Gradle Plugin for Ports &amp; Adapters architecture</description>
@@ -28,7 +28,7 @@
     <dependency>
       <groupId>io.github.marksosman</groupId>
       <artifactId>scaffolding-plugin</artifactId>
-      <version>0.0.1</version>
+      <version>1.0.0</version>
     </dependency>
   </dependencies>
 </project>

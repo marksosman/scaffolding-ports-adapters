@@ -9,7 +9,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.marksosman</groupId>
   <artifactId>scaffolding-plugin</artifactId>
-  <version>0.0.1</version>
+  <version>1.0.0</version>
   <name>Scaffolding Ports and Adapters Plugin</name>
   <description>Scaffolding Gradle Plugin for Ports &amp; Adapters architecture</description>
   <url>https://github.com/marksosman/scaffolding-ports-adapters</url>

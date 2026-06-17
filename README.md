@@ -14,7 +14,7 @@ A Gradle plugin that scaffolds a **Ports and Adapters** (Hexagonal Architecture)
 
 ```groovy
 plugins {
-    id 'ch.sosman.scaffolding' version '0.0.1'
+    id 'io.github.marksosman.scaffolding' version '1.0.0'
 }
 ```
 
